@@ -19,3 +19,5 @@ about.html: HTML file providing detailed information about My education, experie
 contact.html: HTML file with contact information and links to social media profiles.
 
 styles.css: CSS file for styling the website, including light and dark theme styles.
+
+(Run index.html on a local server)
