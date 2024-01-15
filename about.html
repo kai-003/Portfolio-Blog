@@ -1,0 +1,41 @@
+<div class="about-container" ng-app="Myapp" ng-controller="about-controller">
+  <div class="container">
+    <h2>About Me</h2>
+    <p>As a Computer Engineering Bachelor's degree student, I have developed a strong foundation in programming languages like C++, Java, Python, HTML, as well as a comprehensive understanding of hardware and software engineering concepts. I am enthusiastic about continuous learning and applying my skills to meaningful projects. I am eager to contribute to challenging endeavors that will allow me to expand my knowledge and make a positive impact in the field. I consider myself adaptable and well-prepared for a new career in computer engineering.</p>
+    <h3>Education</h3>
+    <div class="table-responsive">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Qualification</th>
+            <th>Institute</th>
+            <th>Board/University</th>
+            <th>% / CGPA</th>
+            <th>Year</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="x in educations">
+            <td>{{ x.qualification }}</td>
+            <td>{{ x.institute }}</td>
+            <td>{{ x.boardUniversity }}</td>
+            <td>{{ x.percentage }}</td>
+            <td>{{ x.year }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
+  
+    <h3>Experience</h3>
+    <ul>
+      <li>IEEE Computer Society Chapter- Documentation Head (Sep 2023 - Now)</li>
+      <li>Taqneeq Fest - Workshops Executive (Dec 2021 - Mar 2022)</li>
+      <li> Codechef MPSTME Chapter- Events Executive(Oct 2021 - May 2022)</li>
+    </ul>
+    <h3>Skills</h3>
+    <ul>
+      <li ng-repeat="y in skills">{{ y }}</li>
+    </ul>
+  </div>
+</div>

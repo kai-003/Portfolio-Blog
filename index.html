@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="Myapp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.min.js"></script>
+  <script src="script.js"></script>
+  <title>Kaiwan Vaghchhipawala - Portfolio</title>
+</head>
+<body ng-controller="routes">
+  <header>
+    <div class="navbar">
+      <h2>Kaiwan Vaghchhipawala</h2>
+      <nav>
+        <ul>
+          <li ng-class="{ 'isactive': isActive('/home') }"><a href="#/!">Home</a></li>
+          <li ng-class="{ 'isactive': isActive('/about') }"><a href="#!about">About</a></li>
+          <li ng-class="{ 'isactive': isActive('/contact') }"><a href="#!contact">Contact</a></li>
+          <li class="theme-toggle" ng-hide="isDarkTheme" ng-click="toggleTheme()">
+            <i class="fas fa-sun"></i>
+          </li>
+          <li class="theme-toggle" ng-hide="!isDarkTheme" ng-click="toggleTheme()">
+            <i class="fas fa-moon"></i>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main ng-view class="main-content"></main>
+
+  <footer>
+    <div>
+      <p>&copy; 2024 Kaiwan's Portfolio. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

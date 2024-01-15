@@ -1,0 +1,439 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+    overflow-x: hidden;
+}
+
+.container-common {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s, color 0.3s;
+    height: 85vh;
+}
+
+header {
+    display: inline-block;
+    background-color: #3498db;
+    padding: 20px;
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
+    margin-right: 30px;
+    padding: 0 10px;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar a.active {
+    background-color: #112170;
+    color: #3498db;
+}
+
+.navbar ul a:hover {
+    line-height: 2;
+}
+
+.isactive {
+    background-color: #00b7ff;
+    color: #3498db;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 25px;
+}
+
+@media (max-width: 768px) {
+    .isactive {
+        border-radius: 20%;
+    }
+}
+
+@media (min-width: 769px) {
+    .isactive {
+        border-radius: 40%;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    nav li {
+        margin-right: 0;
+        margin-bottom: 10px;
+        height: 100%;
+        width: 100%;
+    }
+
+    body {
+        padding-top: 60px;
+    }
+}
+
+main {
+    background-color: #ffffff;
+    height: 85vh;
+    margin-top: 10vh;
+    padding-bottom: 0;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 5vh;
+    margin-top: auto;
+    margin-bottom: 0;
+}
+
+body.dark-theme {
+    background-color: #2c3e50;
+    color: #fff;
+}
+
+body.dark-theme .about-container {
+    background-color: #141618;
+    color: #fff;
+}
+
+main.dark-theme {
+    background-color: #141618;
+    color: #fff;
+}
+
+.container.dark-theme {
+    background-color: #141618;
+    color: #fff;
+}
+
+.dark-theme header {
+    background-color: #34495e;
+}
+
+.dark-theme .navbar a.active {
+    background-color: #112170;
+    color: #3498db;
+}
+
+.dark-theme .isactive {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 25px;
+    background-color: #050606;
+    color: #3498db;
+}
+
+@media (max-width: 768px) {
+    .dark-theme .isactive {
+        border-radius: 20%;
+    }
+}
+
+@media (min-width: 769px) {
+    .dark-theme .isactive {
+        border-radius: 40%;
+    }
+}
+
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s, color 0.3s;
+    height: 85vh;
+}
+
+@media (max-width: 768px) {
+    .image-section,
+    .text-section {
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 769px) {
+    .image-section img {
+        width: 400px;
+        height: 400px;
+    }
+
+    .text-section {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .text-section,
+    .image-section {
+        font-size: 24px;
+    }
+}
+
+.button2 {
+    margin-left: 40px;
+}
+
+.buttons button {
+    margin-top: 20px;
+    margin-left: 50px;
+    border-radius: 25px;
+    padding: 5px 10px;
+    background-color: #2c3e50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.text-section,
+.image-section {
+    flex: 1;
+    padding: 20px;
+    position: relative;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.about-container .container{
+    margin-top: 60px;
+}
+.about-container {
+    margin-top: 80px;
+    margin-bottom: 0;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s, color 0.3s;
+    height: 85vh;
+}
+
+.responsive-table {
+    overflow-x: auto;
+    margin: 20px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+@media (max-width: 1160px) {
+    th, td {
+        font-size: 14px;
+    }
+    table {
+        overflow-x: auto;
+        display: block;
+    }
+}
+
+.image-section {
+    flex: 1;
+    padding: 20px;
+    position: relative;
+    transition: background-color 0.3s, color 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-section {
+    margin-left: 15px;
+    flex: 1;
+    padding: 20px;
+    position: relative;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.home-container.dark-theme {
+    background-color: #141618;
+    color: #fff;
+}
+
+.circular-image {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .home-container {
+        flex-direction: column;
+    }
+
+    .about-container {
+        height: auto;
+    }
+
+    .image-section,
+    .text-section {
+        order: 0;
+    }
+}
+/* Contact page styles */
+.contact-container {
+    margin-top: 80px;
+    margin-bottom: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: f;
+    align-items: left;
+    transition: background-color 0.3s, color 0.3s;
+    height: 85vh;
+}
+
+.contact-container h1, .contact-container h2, .contact-container p {
+    color: #333; /* Adjust the text color for light theme */
+    text-align: center; /* Center the text */
+}
+
+/* Contact details styles */
+.contact-details {
+    margin-top: 20px;
+    text-align: center; /* Center the text */
+}
+
+.contact-details h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #2c3e50; /* Heading color for light theme */
+}
+
+.contact-details p {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #333; /* Text color for light theme */
+}
+
+/* Hyperlink styles for light theme */
+.contact-details a {
+    color: #3498db;
+}
+
+/* Social media styles */
+.social-media {
+    margin-top: 20px;
+    text-align: center; /* Center the text */
+}
+
+.social-media h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #2c3e50; /* Heading color for light theme */
+}
+
+.social-media ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center the social media icons */
+}
+
+.social-media li {
+    margin-right: 20px;
+    border-radius: 30%;
+    padding-top: 7px;
+}
+
+.social-media img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* Dark theme styles for contact container */
+body.dark-theme .contact-container {
+    background-color: #141618;
+    color: #fff;
+}
+
+body.dark-theme .contact-container h1, body.dark-theme .contact-container h2, body.dark-theme .contact-container p {
+    color: #fff; /* Adjust the text color for dark theme */
+}
+
+/* Dark theme styles for contact details */
+body.dark-theme .contact-details h2, body.dark-theme .contact-details p {
+    color: #bdc3c7; /* Adjust text color for dark theme */
+}
+
+/* Hyperlink styles for dark theme */
+body.dark-theme .contact-details a {
+    color: #3498db;
+}
+
+/* Dark theme styles for social media */
+body.dark-theme .social-media h2 {
+    color: #bdc3c7; /* Adjust heading color for dark theme */
+}
+
+.social-media li{
+    background-color: #fff;
+}
+/* Contact details styles */
+.contact-details {
+    text-align: center; /* Center the text */
+}
+
+.contact-details h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #2c3e50; /* Heading color for light theme */
+}
+
+.contact-details p {
+    font-size: 18px;
+    margin: 0; /* Remove margin to eliminate space */
+    color: #333; /* Text color for light theme */
+}
