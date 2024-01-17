@@ -321,7 +321,7 @@ th, td {
         order: 0;
     }
 }
-/* Contact page styles */
+
 .contact-container {
     margin-top: 80px;
     margin-bottom: 0;
@@ -335,50 +335,47 @@ th, td {
 }
 
 .contact-container h1, .contact-container h2, .contact-container p {
-    color: #333; /* Adjust the text color for light theme */
-    text-align: center; /* Center the text */
+    color: #333;
+    text-align: center;
 }
 
-/* Contact details styles */
 .contact-details {
     margin-top: 20px;
-    text-align: center; /* Center the text */
+    text-align: center;
 }
 
 .contact-details h2 {
     font-size: 24px;
     margin-bottom: 10px;
-    color: #2c3e50; /* Heading color for light theme */
+    color: #2c3e50;
 }
 
 .contact-details p {
     font-size: 18px;
     margin-bottom: 8px;
-    color: #333; /* Text color for light theme */
+    color: #333;
 }
 
-/* Hyperlink styles for light theme */
 .contact-details a {
     color: #3498db;
 }
 
-/* Social media styles */
 .social-media {
     margin-top: 20px;
-    text-align: center; /* Center the text */
+    text-align: center;
 }
 
 .social-media h2 {
     font-size: 24px;
     margin-bottom: 10px;
-    color: #2c3e50; /* Heading color for light theme */
+    color: #2c3e50;
 }
 
 .social-media ul {
     list-style: none;
     padding: 0;
     display: flex;
-    justify-content: center; /* Center the social media icons */
+    justify-content: center;
 }
 
 .social-media li {
@@ -393,47 +390,43 @@ th, td {
     border-radius: 50%;
 }
 
-/* Dark theme styles for contact container */
 body.dark-theme .contact-container {
     background-color: #141618;
     color: #fff;
 }
 
 body.dark-theme .contact-container h1, body.dark-theme .contact-container h2, body.dark-theme .contact-container p {
-    color: #fff; /* Adjust the text color for dark theme */
+    color: #fff;
 }
 
-/* Dark theme styles for contact details */
 body.dark-theme .contact-details h2, body.dark-theme .contact-details p {
-    color: #bdc3c7; /* Adjust text color for dark theme */
+    color: #bdc3c7;
 }
 
-/* Hyperlink styles for dark theme */
 body.dark-theme .contact-details a {
     color: #3498db;
 }
 
-/* Dark theme styles for social media */
 body.dark-theme .social-media h2 {
-    color: #bdc3c7; /* Adjust heading color for dark theme */
+    color: #bdc3c7;
 }
 
 .social-media li{
     background-color: #fff;
 }
-/* Contact details styles */
+
 .contact-details {
-    text-align: center; /* Center the text */
+    text-align: center;
 }
 
 .contact-details h2 {
     font-size: 24px;
     margin-bottom: 10px;
-    color: #2c3e50; /* Heading color for light theme */
+    color: #2c3e50;
 }
 
 .contact-details p {
     font-size: 18px;
-    margin: 0; /* Remove margin to eliminate space */
-    color: #333; /* Text color for light theme */
+    margin: 0;
+    color: #333;
 }
